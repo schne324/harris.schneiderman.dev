@@ -1,3 +1,40 @@
+:root {
+  /* palette */
+  --light: rgb(240, 240, 240);
+  --dark: hsla(340, 13%, 5%, 1);
+  --grey: hsla(225, 10%, 30%, 1);
+  --turquoise: hsla(171, 100%, 75%, 1);
+  --cyan: hsla(198, 78%, 64%, 1);
+
+  /* font-sizes */
+  --base-font-size: 15px;
+
+  /* spacing */
+  --space-small: 12px;
+  --space-medium: 18px;
+  --space-large: 26px;
+
+  /* animation/transition */
+  --animation-duration: 270ms;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background: var(--light);
+  font-size: var(--base-font-size);
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Cutive Mono', monospace;
+}
+
 h1 {
   text-align: center;
   display: flex;
