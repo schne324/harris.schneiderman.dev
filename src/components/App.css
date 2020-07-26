@@ -18,9 +18,24 @@
   --animation-duration: 270ms;
 }
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+:focus {
+  outline: 2px solid var(--dark);
+}
+
 body {
   font-family: 'Raleway', sans-serif;
   background: var(--light);
+  color: var(--grey);
   font-size: var(--base-font-size);
   margin: 0;
   padding: 0;
@@ -33,15 +48,25 @@ h4,
 h5,
 h6 {
   font-family: 'Cutive Mono', monospace;
+  color: var(--grey);
 }
 
 h1 {
+  font-size: 3em;
+}
+
+a {
+  color: var(--dark);
+}
+
+main {
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  min-height: calc(100vh - 90px);
+  margin-top: 90px;
 }
 
 img {

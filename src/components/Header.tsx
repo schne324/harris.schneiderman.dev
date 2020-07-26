@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import PermIdentityIcon from '@material-ui/icons/PermIdentity';
 import BuildIcon from '@material-ui/icons/Build';
@@ -11,24 +12,24 @@ const Header: React.ComponentType = () => {
       <nav>
         <ul>
           <li>
-            <a href="/" className="Logo" aria-label="Home">
+            <Link to="/" className="Logo" aria-label="Home">
               {'<H />'}
-            </a>
+            </Link>
           </li>
           <li className="Right">
-            <a href="/About" aria-label="About">
+            <Link to="/about" aria-label="About">
               <PermIdentityIcon />
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/About" aria-label="Projects">
+            <Link to="/projects" aria-label="Projects">
               <BuildIcon />
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/About" aria-label="Publications">
+            <Link to="/publications" aria-label="Publications">
               <RecordVoiceOverIcon />
-            </a>
+            </Link>
           </li>
           <li>
             <a

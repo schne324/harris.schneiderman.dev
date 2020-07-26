@@ -28,6 +28,11 @@ header ul li a {
   border-top: var(--header-border-width) solid transparent;
   border-bottom: var(--header-border-width) solid transparent;
   transition: var(--animation-duration) all;
+  margin-right: var(--space-small);
+}
+
+header ul li:last-of-type a {
+  margin-right: 0;
 }
 
 header a::before {
