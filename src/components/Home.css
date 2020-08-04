@@ -1,4 +1,30 @@
-.Home p {
+.Home {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - var(--header-height));
+}
+
+.Home p,
+.Home a {
   font-family: 'Cutive Mono', monospace;
   font-size: 1.2em;
+}
+
+.Home > div {
+  margin: auto;
+}
+
+.Home a {
+  color: var(--grey);
+  padding: var(--space-small);
+  border-top: var(--header-border-width) solid transparent;
+  border-bottom: var(--header-border-width) solid transparent;
+  transition: var(--animation-duration) all;
+}
+
+.Home a:focus,
+.Home a:hover {
+  border-bottom-color: var(--grey);
+  transition: var(--animation-duration) all;
+  outline: 0;
 }

@@ -5,15 +5,15 @@ import './About.css';
 const App: React.ComponentType = () => {
   return (
     <div className="About">
-      <h1>Harris?</h1>
-      <ul>
+      <h1>About</h1>
+      <ul className="Box">
         <li>
           <span>Principal UI Engineer</span>{' '}
-          <a href="https://deque.com">@deque.com</a>
+          <a href="https://deque.com">@deque</a>
         </li>
         <li>
           <span>Member of ARIA Working Group</span>{' '}
-          <a href="https://w3c.org">@w3c</a>
+          <a href="https://w3.org">@w3c</a>
         </li>
         <li>
           <span>Writer of code:</span>{' '}

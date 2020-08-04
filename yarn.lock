@@ -1725,6 +1725,11 @@ class-utils@^0.3.5:
     isobject "^3.0.0"
     static-extend "^0.1.1"
 
+classnames@^2.2.6:
+  version "2.2.6"
+  resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.2.6.tgz#43935bffdd291f326dad0a205309b38d00f650ce"
+  integrity sha512-JR/iSQOSt+LQIWwrwEzJ9uk0xfN3mTVYMwt1Ir5mUcSN6pU+V4zQFFaJsclJbPuAUQH+yfWef6tm7l1quW3C8Q==
+
 clean-stack@^2.0.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/clean-stack/-/clean-stack-2.2.0.tgz#ee8472dbb129e727b31e8a10a427dee9dfe4008b"
@@ -3066,6 +3071,18 @@ grapheme-breaker@^0.3.2:
   dependencies:
     brfs "^1.2.0"
     unicode-trie "^0.3.1"
+
+hang-tight-react@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/hang-tight-react/-/hang-tight-react-1.2.0.tgz#d7451760df99c1ef70257423dda2e1abc6982a53"
+  integrity sha512-UA4Y5CNm6gYqpGyCN/nTZCvWcrWA3ALINGqQezGkWrORxudfzI6NbFh3IQtSE0XK7sZUgLKGeV1UKBmDxGS3ug==
+  dependencies:
+    classnames "^2.2.6"
+
+hang-tight@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/hang-tight/-/hang-tight-1.2.0.tgz#bff3705b39ac1559b991778218b91586aba533a5"
+  integrity sha512-4EKKGv0reeKvu+TeoBY1FYNfNGBh8CM7nZrmbaDxw2ZibYuuxk5q51KAgGAIPZFLTo/ayInmFqXt7yRpzZQMHA==
 
 har-schema@^2.0.0:
   version "2.0.0"
@@ -4509,6 +4526,13 @@ p-limit@^2.2.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/p-limit/-/p-limit-2.3.0.tgz#3dd33c647a214fdfffd835933eb086da0dc21db1"
   integrity sha512-//88mFWSJx8lxCzwdAABTJL2MyWB12+eIY7MDL2SqLmAkeKU9qxRvWuSyTjm3FUmpBEMuFfckAIqEaVGUDxb6w==
+  dependencies:
+    p-try "^2.0.0"
+
+p-limit@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/p-limit/-/p-limit-3.0.2.tgz#1664e010af3cadc681baafd3e2a437be7b0fb5fe"
+  integrity sha512-iwqZSOoWIW+Ew4kAGUlN16J4M7OB3ysMLSZtnhmqx7njIHFPlxWBX8xo3lVTyFVq6mI/lL9qt2IsN1sHwaxJkg==
   dependencies:
     p-try "^2.0.0"
 

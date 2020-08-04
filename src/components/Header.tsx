@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import PermIdentityIcon from '@material-ui/icons/PermIdentity';
 import BuildIcon from '@material-ui/icons/Build';
-import RecordVoiceOverIcon from '@material-ui/icons/RecordVoiceOver';
+import MenuBookIcon from '@material-ui/icons/MenuBook';
 import './Header.css';
 
 const Header: React.ComponentType = () => {
@@ -13,7 +13,7 @@ const Header: React.ComponentType = () => {
         <ul>
           <li>
             <Link to="/" className="Logo" aria-label="Home">
-              {'<H />'}
+              <span aria-hidden="true">{'<H />'}</span>
             </Link>
           </li>
           <li className="Right">
@@ -28,7 +28,7 @@ const Header: React.ComponentType = () => {
           </li>
           <li>
             <Link to="/publications" aria-label="Publications">
-              <RecordVoiceOverIcon />
+              <MenuBookIcon />
             </Link>
           </li>
           <li>
