@@ -9,10 +9,10 @@ const repoData = [
     repo: 'schne324/dragon-drop',
     description: 'Fully accessible drag-and-drop list reordering module',
   },
-  // {
-  //   repo: 'dequelabs/cauldron',
-  //   description: 'Deque pattern library',
-  // },
+  {
+    repo: 'dequelabs/cauldron',
+    description: 'Deque accessible pattern library',
+  },
   {
     repo: 'schne324/hang-tight',
     description: 'CSS Loaders',

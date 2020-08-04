@@ -50,6 +50,7 @@
   },
   "scripts": {
     "build": "parcel build src/index.html",
-    "dev": "parcel src/index.html"
+    "dev": "parcel src/index.html",
+    "postbuild": "cp _redirects dist/"
   }
 }
