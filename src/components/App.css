@@ -79,6 +79,40 @@ img {
   display: block;
 }
 
+iframe {
+  max-width: 100%;
+}
+
 .Box {
   box-shadow: 0 0 1px;
+  max-width: 80%;
+  padding: 1em;
+  margin: 0 auto;
+}
+
+@media (max-width: 725px) {
+  .Box {
+    max-width: 95%;
+  }
+
+  :root {
+    --header-height: 60px;
+  }
+
+  header svg.MuiSvgIcon-root {
+    width: 0.75em;
+    height: 0.75em;
+  }
+
+  header a:focus::before,
+  header a:hover::before {
+    bottom: 37px;
+    padding: 5px 10px;
+  }
+
+  header ul li a {
+    font-size: 1.2em;
+    padding: var(--space-small);
+    white-space: nowrap;
+  }
 }

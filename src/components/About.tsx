@@ -29,7 +29,7 @@ const App: React.ComponentType = () => {
           <Link to="/publications">Writer of articles</Link>
         </li>
         <li>
-          <Link to="/publications#speaker">Speaker of words</Link>
+          <Link to="/publications">Speaker of words</Link>
         </li>
       </ul>
     </div>

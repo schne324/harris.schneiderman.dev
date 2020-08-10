@@ -4,7 +4,10 @@ import Home from './Home';
 import About from './About';
 import Header from './Header';
 import Projects from './Projects';
+import Publications from './Publications';
 import './App.css';
+
+// TODO: 404 page
 
 const App: React.ComponentType = () => {
   return (
@@ -20,6 +23,9 @@ const App: React.ComponentType = () => {
           </Route>
           <Route path="/projects">
             <Projects />
+          </Route>
+          <Route path="/publications">
+            <Publications />
           </Route>
         </Switch>
       </main>

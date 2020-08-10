@@ -18,10 +18,6 @@ const repoData = [
     description: 'CSS Loaders',
   },
   {
-    repo: 'schne324/tideinfo.org',
-    description: 'Tide info app using the NOAA tide data API',
-  },
-  {
     repo: 'dequelabs/combobo',
     description: 'Accessible combobox module',
   },
@@ -42,13 +38,36 @@ const repoData = [
     description: 'React component for rendering offscreen text',
   },
   {
+    repo: 'schne324/games',
+    description: 'Accessible web games',
+  },
+  {
     repo: 'schne324/live-region-playground',
     description: 'Simple ARIA live region sandbox/playground',
   },
+  {
+    repo: 'schne324/tideinfo.org',
+    description:
+      '(WORK IN PROGRESS) Tide info app using the NOAA tide data API',
+  },
 ];
 
+interface Language {
+  [key: string]: number;
+}
+
+interface Repo {
+  title: string;
+  homepage: string;
+  stars: number;
+  url: string;
+  languages: Language;
+  repo: string;
+  description: string;
+}
+
 const Projects: React.ComponentType = () => {
-  const [repos, setRepos] = useState([]);
+  const [repos, setRepos] = useState<Repo[]>([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -76,8 +95,7 @@ const Projects: React.ComponentType = () => {
       });
     });
 
-    Promise.all(fetchCalls).then((data) => {
-      console.log({ data });
+    Promise.all(fetchCalls).then((data: any) => {
       setRepos(data);
       setLoading(false);
     });

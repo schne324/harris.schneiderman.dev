@@ -1,0 +1,13 @@
+.Publications .Box {
+  margin: 2em auto;
+}
+
+.Box__link {
+  margin-top: 1.5em;
+  font-size: 1.1em;
+}
+
+.Box__link a {
+  text-decoration: none;
+  border-bottom: 2px solid;
+}
