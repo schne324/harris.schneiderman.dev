@@ -10,6 +10,7 @@
   margin: 10px;
   max-width: 75%;
   box-shadow: 0 0 1px;
+  align-self: stretch;
   transition: box-shadow 350ms;
 }
 
@@ -38,4 +39,15 @@
   margin: 0 auto;
   padding: 5px;
   display: block;
+}
+
+.Card img,
+.Card svg {
+  width: 50px;
+  margin: 15px auto;
+  display: inline-block;
+}
+
+.Card svg {
+  height: 50px;
 }

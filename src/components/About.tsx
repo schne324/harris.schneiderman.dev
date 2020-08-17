@@ -1,37 +1,43 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Card from './Card';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import RecordVoiceOverIcon from '@material-ui/icons/RecordVoiceOver';
+import dequeLogo from '../img/deque.png';
+import w3cLogo from '../img/w3c.png';
+import a11ysdLogo from '../img/a11ysd.png';
 import './About.css';
 
 const App: React.ComponentType = () => {
   return (
     <div className="About">
       <h1>About</h1>
-      <ul className="Box">
-        <li>
-          <span>Principal UI Engineer</span>{' '}
-          <a href="https://deque.com">@deque</a>
-        </li>
-        <li>
-          <span>Member of ARIA Working Group</span>{' '}
-          <a href="https://w3.org">@w3c</a>
-        </li>
-        <li>
-          <span>Writer of code:</span>{' '}
-          <a href="https://github.com/schne324">@schne324 (github)</a>
-        </li>
-        <li>
-          <span>Organizer of</span>{' '}
-          <a href="https://a11ysd.com">
-            a11ySD - San Diego Accessibility &amp; Inclusive Design
-          </a>
-        </li>
-        <li>
-          <Link to="/publications">Writer of articles</Link>
-        </li>
-        <li>
-          <Link to="/publications">Speaker of words</Link>
-        </li>
-      </ul>
+      <div className="Cards">
+        <Card
+          title="Principal UI Engineer @deque"
+          homepage="https://deque.com"
+          description={<img src={dequeLogo} role="presentation" />}
+        />
+        <Card
+          title="Member of ARIA Working Group"
+          homepage="https://w3.org"
+          description={<img src={w3cLogo} role="presentation" />}
+        />
+        <Card
+          title="Organizer of a11ySD - San Diego Accessibility &amp; Inclusive Design"
+          homepage="https://a11ysd.com"
+          description={<img src={a11ysdLogo} role="presentation" />}
+        />
+        <Card
+          title="Writer of code (@schne324)"
+          homepage="https://github.com/schne324"
+          description={<GitHubIcon />}
+        />
+        <Card
+          title={<Link to="/projects">Speaker and writer</Link>}
+          description={<RecordVoiceOverIcon />}
+        />
+      </div>
     </div>
   );
 };
